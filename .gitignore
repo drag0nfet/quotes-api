@@ -1,0 +1,39 @@
+# ---> Go
+
+# Бинарные файлы
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Кеш Go
+/pkg/
+/bin/
+*.log
+
+# Кеш зависимостей и сборки
+**/vendor/
+go.sum
+*.mod.tmp
+
+# Файлы, связанные с Go tooling
+*.coverprofile
+*.code-workspace
+*.testresult
+*.tmp
+
+# Тестовые отчеты
+*.cover
+coverage.out
+profile.cov
+
+# IDE: GoLand / IntelliJ
+.idea/
+*.iml
+
+# Системные файлы
+.DS_Store
+Thumbs.db
