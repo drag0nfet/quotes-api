@@ -12,5 +12,5 @@ func SetupRoutes(router *mux.Router, store *storage.MemoryStorage) {
 	router.HandleFunc("/quotes", h.AddQuote).Methods("POST")
 	router.HandleFunc("/quotes", h.GetQuotesByAuthor).Methods("GET")
 	router.HandleFunc("/quotes/random", h.GetRandomQuote).Methods("GET")
-	router.HandleFunc("/quotes/{id}", h.DeleteQuoteHandler).Methods("DELETE")
+	router.HandleFunc("/quotes/{id}", h.DeleteQuote).Methods("DELETE")
 }

@@ -74,8 +74,8 @@ func (h *Handler) GetQuotesByAuthor(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(quotes)
 }
 
-// DeleteQuoteHandler - DELETE /quotes/{id}
-func (h *Handler) DeleteQuoteHandler(w http.ResponseWriter, r *http.Request) {
+// DeleteQuote - DELETE /quotes/{id}
+func (h *Handler) DeleteQuote(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	idStr := vars["id"]
 	id, err := strconv.Atoi(idStr)
