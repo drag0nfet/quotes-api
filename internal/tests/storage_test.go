@@ -62,7 +62,6 @@ func TestAddQuoteStorage(t *testing.T) {
 				t.Errorf("Expected %d quotes for author %q, got %d", tt.expectedAuthorQuotes, tt.quote.Author, len(authorQuotes))
 			}
 
-			// Сбрасываем хранилище для следующего теста
 			store = storage.NewMemoryStorage()
 		})
 	}
