@@ -67,9 +67,9 @@ API поддерживает следующие эндпоинты:
 
 - `cmd/quotes-api/main.go` — точка входа приложения.
 - `internal/api/` — обработчики HTTP-запросов и маршрутизация.
-- `internal/models/` — структуры данных (например, Quote).
+- `internal/models/` — структура данных Quote.
 - `internal/storage/` — логика хранения цитат в памяти.
-- `internal/tests/` — юнит-тесты (опционально).
+- `internal/tests/` — юнит-тесты.
 
 ## Заметки
 
